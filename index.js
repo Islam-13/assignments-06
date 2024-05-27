@@ -3,6 +3,7 @@ import connection from "./db/connection.js";
 import usersRouter from "./src/modules/users/users.routes.js";
 import postsRouter from "./src/modules/posts/posts.routes.js";
 import commentsRouter from "./src/modules/comments/comments.routes.js";
+import cors from "cors"
 
 const app = express();
 const port = process.env.port || 3000;
