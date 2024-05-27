@@ -7,6 +7,7 @@ import commentsRouter from "./src/modules/comments/comments.routes.js";
 const app = express();
 const port = process.env.port || 3000;
 
+app.use(cors())
 app.use(express.json());
 app.use("/users", usersRouter);
 app.use("/posts", postsRouter);
