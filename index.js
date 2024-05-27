@@ -14,6 +14,8 @@ app.use("/comments", commentsRouter);
 
 connection();
 
+app.get("/", (req,res)=>{ res.status(200).json({msg: "hello my project"})})
+
 app.use("*", (req, res) => {
   res.status(404).json({ msg: "404 page not found" });
 });
