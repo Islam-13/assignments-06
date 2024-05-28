@@ -7,6 +7,7 @@ export const sequelize = new Sequelize(
   {
     dialect: "mysql",
     host: "bbc1dqvhslnoymxi4qbr-mysql.services.clever-cloud.com",
+    dialectModule: mysql2
   }
 );
 
